@@ -1,0 +1,149 @@
+/* styles.css */
+
+body {
+  background-color: #f5f2f2;
+  font-family: Inter;
+}
+.navbar {
+  background-color: #f5f2f2;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.navbar li:hover {
+  background-color: #efefef;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar li {
+    display: block;
+    padding: 10px;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+  }
+
+  .navbar.open .navbar-menu {
+    display: block;
+  }
+}
+
+/* hero.css */
+.hero-container {
+  text-align: center;
+  padding: 50px;
+  background-color: #ffdede;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  color: #605e5e;
+
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* feature.css */
+.feature-container {
+  background-color: #f7d1d1;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.feature-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature-description {
+  color: #605e5e;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.feature-button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* testimonial.css */
+.testimonial-container {
+  background-color: #f9c0c0;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.testimonial-text {
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  font-size: 16px;
+  font-weight: bold;
+}
