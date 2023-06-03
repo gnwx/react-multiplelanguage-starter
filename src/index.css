@@ -72,6 +72,7 @@ body {
 /* hero.css */
 .hero-container {
   text-align: center;
+  margin: 40px;
   padding: 50px;
   background-color: #ffdede;
 }
@@ -103,6 +104,7 @@ body {
 .feature-container {
   background-color: #f7d1d1;
   padding: 20px;
+  margin: 40px;
   border-radius: 5px;
   text-align: center;
 }
@@ -133,6 +135,7 @@ body {
 .testimonial-container {
   background-color: #f9c0c0;
   padding: 20px;
+  margin: 40px;
   border-radius: 5px;
   text-align: center;
 }

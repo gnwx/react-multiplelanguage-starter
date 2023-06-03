@@ -1,13 +1,13 @@
 import React from "react";
-
+import { useLanguage } from "react-multiplelanguage";
 const Hero = () => {
+  const { texts } = useLanguage();
+  const { hero } = texts;
   return (
     <div className="hero-container">
-      <h1 className="hero-title">Welcome to Brand!</h1>
-      <p className="hero-description">
-        Discover our innovative products and services.
-      </p>
-      <button className="hero-button">Get Started</button>
+      <h1 className="hero-title">{hero.title}</h1>
+      <p className="hero-description">{hero.description}</p>
+      <button className="hero-button">{hero.ctaButton}</button>
     </div>
   );
 };

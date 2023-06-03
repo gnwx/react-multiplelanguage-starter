@@ -1,12 +1,10 @@
 import React from "react";
 
-const Testimonial = () => {
+const Testimonial = ({ testimonial }) => {
   return (
     <div className="testimonial-container">
-      <p className="testimonial-text">
-        Brand has exceeded my expectations. Highly recommended!
-      </p>
-      <cite className="testimonial-author">John Doe</cite>
+      <p className="testimonial-text">{testimonial.testimonial}</p>
+      <cite className="testimonial-author">{testimonial.author} </cite>
     </div>
   );
 };

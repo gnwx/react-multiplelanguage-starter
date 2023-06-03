@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 import "../index.css";
-
+import { useLanguage } from "react-multiplelanguage";
+import { Flags } from "react-multiplelanguage";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const { texts } = useLanguage();
+  const { navbar } = texts;
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
 
   return (
     <nav className={`navbar ${isOpen ? "open" : ""}`}>
+      <Flags />
       <button
         className="navbar-toggle"
         onClick={toggleNavbar}
@@ -25,22 +29,22 @@ const Navbar = () => {
       >
         <li role="none">
           <a href="/" role="menuitem">
-            Home
+            {navbar.home}
           </a>
         </li>
         <li role="none">
           <a href="/" role="menuitem">
-            About
+            {navbar.about}
           </a>
         </li>
         <li role="none">
           <a href="/" role="menuitem">
-            Products
+            {navbar.products}
           </a>
         </li>
         <li role="none">
           <a href="/" role="menuitem">
-            Contact
+            {navbar.contact}
           </a>
         </li>
       </ul>

@@ -1,15 +1,15 @@
-import Feature from "./components/Feature";
+import Features from "./components/Features";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import Testimonial from "./components/Testimonial";
+import Testiomonials from "./components/Testiomonials";
 
 const App = () => {
   return (
     <>
       <Navbar />
       <Hero />
-      <Feature />
-      <Testimonial />
+      <Features />
+      <Testiomonials />
     </>
   );
 };

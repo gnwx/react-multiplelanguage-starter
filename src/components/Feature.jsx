@@ -1,11 +1,11 @@
 import React from "react";
 
-const Feature = () => {
+const Feature = ({ feature }) => {
   return (
     <div className="feature-container">
-      <p className="feature-title">Cutting-Edge Technology</p>
-      <p className="feature-description">Explore our cutting-edge features.</p>
-      <button className="feature-button">Learn More</button>
+      <p className="feature-title">{feature.title}</p>
+      <p className="feature-description">{feature.description}</p>
+      <button className="feature-button">{feature.ctaButton} </button>
     </div>
   );
 };
